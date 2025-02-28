@@ -96,9 +96,9 @@
 
                 html += `    <div style="flex: 0 0 auto; background-color: #E0F1EA; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px; width: 250px; text-align: center;">\n`;
                 html += `        <a href="${urls[i]}" style="display: block;">\n`;
-                html += `            <img src="${imageUrls[i]}" alt="Gambar ${i + 1}" style="width: 100%; height: auto; border-radius: 8px;">\n`;
+                html += `            <img loading="eager" class="W(100%) H(a) Bdrs(8px) Ov(h)" height="auto" width="100%" src="${imageUrls[i]}" alt="Gambar ${i + 1}" style="border-radius: 8px; object-fit: cover;">\n`;
                 html += `        </a>\n`;
-                html += `        <p style="margin: 5px 0; font-weight:;">${productNames[i]}</p>\n`; // Added product name
+                html += `        <p style="margin: 5px 0; font-weight:;">${productNames[i]}</p>\n`;
                 html += `        <p style="margin: 5px 0; font-weight: bold;">${formattedPrice}</p>\n`;
                 html += `        <a href="${urls[i].includes('lynk.id') ? urls[i] + '/checkout' : urls[i]}" style="display: inline-block; background-color: #2DB47C; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">Beli Sekarang</a>\n`;
                 html += `    </div>\n`;
